@@ -7,8 +7,6 @@ Since this is an anime themed bot, so anime module is a must! {BOT_NAME} provide
 
 **Commands**:
 
-• /anihelp: Get interactive and detailed help on anime commands
-
 • /anime: Fetches info on single anime (includes buttons to look up for prequels and sequels)
 • /anilist: Fetches info on multiple possible animes related to query
 • /character: Fetches info on multiple possible characters related to query
