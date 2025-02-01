@@ -472,8 +472,7 @@ async def feed_(client: Client, message: Message, mdata: dict):
     owner = (await client.get_users(DEV_USERS[0])).username
     await client.send_message(
         mdata["chat"]["id"],
-        f"For issues or queries please contact "
-        + f"@{owner} or join @SpiralTechDivision",
+        f"For issues or queries please contact at @Alcyone_Support"
     )
 
 
