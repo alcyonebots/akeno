@@ -13,16 +13,17 @@ from Emilia.utils.decorators import *
 from Emilia.tele.clone import startpic
 
 START_TEXT = """
-Welcome to [{} :3]({})
+𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 [{} :3]({})
 
-This bot give varieties of features such as
-➩ Group Management
-➩ Spammer Protection
-➩ Fun like chatbot
-➩ Clone, Ranking, AI System
-➩ Anime Loaded Modules
+⛩️ 𝖴𝗇𝗅𝖾𝖺𝗌𝗁 𝗍𝗁𝖾 𝖯𝗈𝗐𝖾𝗋 𝗈𝖿 𝖠𝗇𝗂𝗆𝖾 & 𝖠𝗎𝗍𝗈𝗆𝖺𝗍𝗂𝗈𝗇! 
+✦ 𝖥𝖾𝖺𝗍𝗎𝗋𝖾𝗌 𝗍𝗁𝖺𝗍 𝗆𝖺𝗄𝖾 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉 𝗅𝖾𝗀𝖾𝗇𝖽𝖺𝗋𝗒:
+╭───────────⭓
+┃ ✥ 𝖦𝗋𝗈𝗎𝗉 𝖬𝖺𝗇𝖺𝗀𝖾𝗆𝖾𝗇𝗍 – 𝖪𝖾𝖾𝗉 𝗒𝗈𝗎𝗋 𝗋𝖾𝖺𝗅𝗆 𝗂𝗇 𝖼𝗁𝖾𝖼𝗄.
+┃ ✥ 𝖠𝗇𝗂𝗆𝖾 𝖬𝗈𝖽𝗎𝗅𝖾𝗌 – 𝖶𝖺𝗂𝖿𝗎𝗌, 𝖺𝗇𝗂𝗅𝗂𝗌𝗍, & 𝗆𝗈𝗋𝖾!
+┃ ✥ 𝖠𝖨 & 𝖥𝗎𝗇 – 𝖱𝖺𝗇𝗄𝗂𝗇𝗀 𝗌𝗒𝗌𝗍𝖾𝗆, 𝗂𝗇𝗍𝖾𝗅𝗅𝗂𝗀𝖾𝗇𝗍 𝗋𝖾𝗉𝗅𝗂𝖾𝗌!
+╰───────────⭓
 
-Use the buttons buttons or /help to checkout even more!
+⭐ 𝖳𝖺𝗉 𝗍𝗁𝖾 𝖻𝗎𝗍𝗍𝗈𝗇𝗌 𝖻𝖾𝗅𝗈𝗐 𝗈𝗋 𝗎𝗌𝖾 /help 𝗍𝗈 𝖾𝗑𝗉𝗅𝗈𝗋𝖾 @AkenoHajimeBot
 """
 
 
@@ -33,15 +34,14 @@ async def starttt(client, message):
     if len(message.text.split()) == 1:
         if message.chat.type == ChatType.PRIVATE:
             buttons = [
-                [InlineKeyboardButton("Help", callback_data="help_back")],
+                [InlineKeyboardButton("𝖧𝖾𝗅𝗉", callback_data="help_back")],
                 [
                     InlineKeyboardButton(
-                        "Support", url=f"https://t.me/{SUPPORT_CHAT}"
+                        "𝖲𝗎𝗉𝗉𝗈𝗋𝗍", url=f"https://t.me/{SUPPORT_CHAT}"
                     ),
-                    InlineKeyboardButton("News", url=f"https://t.me/{UPDATE_CHANNEL}"),
+                    InlineKeyboardButton("𝖴𝗉𝖽𝖺𝗍𝖾𝗌", url=f"https://t.me/{UPDATE_CHANNEL}"),
                 ],
-                [InlineKeyboardButton("How to Clone?", callback_data="clone_help")],
-                [InlineKeyboardButton("Source Code", url="https://github.com/ArshCypherZ/Emilia")],
+                [InlineKeyboardButton("𝖮𝗐𝗇𝖾𝗋", url="https://t.me/Cenzeo")],
             ]
             
             await message.reply_text(
@@ -51,7 +51,7 @@ async def starttt(client, message):
             )
 
         elif message.chat.type != ChatType.PRIVATE:
-            await message.reply("Hey there, ping me in my PM to get help!")
+            await message.reply("𝖧𝖾𝗒 𝗍𝗁𝖾𝗋𝖾, 𝗉𝗂𝗇𝗀 𝗆𝖾 𝗂𝗇 𝗆𝗒 𝖯𝖬 𝗍𝗈 𝗀𝖾𝗍 𝗁𝖾𝗅𝗉!")
 
     if len(message.text.split()) > 1:
         user = message.from_user.id
@@ -132,7 +132,7 @@ def startCheckQuery(message, StartQuery=None) -> bool:
     else:
         return False
 
-button = [[InlineKeyboardButton("Clone Commands", callback_data="bot_clone")]]
+button = [[InlineKeyboardButton("𝖢𝗅𝗈𝗇𝖾 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌", callback_data="bot_clone")]]
 
 @Client.on_callback_query()
 async def callback_query_handler(client, callback_query):
