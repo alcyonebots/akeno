@@ -7,5 +7,5 @@ async def handle_donate(event):
     message += "Your support helps us continue providing great services.\n\n"
     message += "To donate, please click on the button below.\n"
     message += "We appreciate your generosity! ❤️"
-    button = [Button.url("Donate", "https://t.me/AkenoHajimeBot/donation")]
+    button = [Button.url("Donate", "https://t.me/Cenzeo")]
     await event.reply(message, buttons=button)
