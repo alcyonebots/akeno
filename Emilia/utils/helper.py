@@ -8,6 +8,7 @@ from time import time
 from traceback import format_exc as err
 from typing import Optional, Tuple
 from uuid import uuid4
+from pytz import timezone
 
 import requests
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -655,6 +656,6 @@ async def remove_down_path_files():
 
 
 j1 = AsyncIOScheduler()
-j1.add_job(remove_useless_elements, "interval", minutes=3)
-j1.add_job(remove_down_path_files, "interval", minutes=5)
+j1.add_job(remove_useless_elements, "interval", minutes=3, timezone=timezone("Asia/Kolkata"))
+j1.add_job(remove_down_path_files, "interval", minutes=5, timezone=timezone("Asia/Kolkata"))
 j1.start()
