@@ -21,7 +21,7 @@ class Config(object):
     START_PIC = "https://iili.io/2ZNpujV.jpg" # Start Image
     DEV_USERS = [6663845789, 6698364560] # Dev Users
     TOKEN = "7887377098:AAGPD37rvqymDGiv3R2xXXvqL4p70GxnWB8" # Bot Token from @BotFather
-    CLONE_LIMIT = 50 # Number of clones your bot can make
+    CLONE_LIMIT = 1 # Number of clones your bot can make
 
     EVENT_LOGS = -1002183841044 # Event Logs Chat ID
     OWNER_ID = 6663845789 # Owner ID
