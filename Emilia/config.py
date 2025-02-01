@@ -26,7 +26,7 @@ class Config(object):
     EVENT_LOGS = -1002183841044 # Event Logs Chat ID
     OWNER_ID = 6663845789 # Owner ID
  
-    TEMP_DOWNLOAD_DIRECTORY = "root/" # Temporary Download Directory
+    TEMP_DOWNLOAD_DIRECTORY = "/root/akeno/" # Temporary Download Directory
     BOT_NAME = "Akeno" # Bot Name
     WALL_API = "6950f53" # Wall API from wall.alphacoders.com
     ORIGINAL_EVENT_LOOP = True # Do not Change
