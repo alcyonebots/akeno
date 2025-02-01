@@ -1,6 +1,6 @@
 import asyncio
 import re
-import time
+import pytz
 from collections import defaultdict
 from traceback import format_exc as err
 
@@ -560,7 +560,7 @@ async def livechart_parser():
                     await anibot.send_message(i["_id"], admin_error_msg)
                 except BaseException:
                     e = err()
-                    await clog("Emilia", f"Group: {i['_id']}\n\n```{e}```", "UN_PIN")
+                    await clog("Akeno", f"Group: {i['_id']}\n\n```{e}```", "UN_PIN")
         elif (len(lc_final_dict) != 0) and (i["unpin"] not in [None, 0]):
             tbud = await HD_GRPS.find_one({"_id": i["_id"]})
             await MAL_HD_GRPS.find_one_and_update(
@@ -569,5 +569,11 @@ async def livechart_parser():
 
 
 scheduler = AsyncIOScheduler()
-scheduler.add_job(livechart_parser, "interval", minutes=5)
+timezone = pytz.timezone("Asia/Kolkata")  # Change to your preferred timezone
+scheduler.add_job(
+    livechart_parser,
+    "interval",
+    minutes=5,
+    timezone=timezone
+)
 scheduler.start()
