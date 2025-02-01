@@ -18,7 +18,7 @@ class Config(object):
 
     SUPPORT_CHAT = "Alcyone_Support" # Support Chat Username
     UPDATE_CHANNEL = "AlcyoneBots" # Update Channel Username
-    START_PIC = "https://ibb.co/5X49z7s2" # Start Image
+    START_PIC = "https://iili.io/2ZNpujV.jpg" # Start Image
     DEV_USERS = [6663845789, 6698364560] # Dev Users
     TOKEN = "7887377098:AAGPD37rvqymDGiv3R2xXXvqL4p70GxnWB8" # Bot Token from @BotFather
     CLONE_LIMIT = 50 # Number of clones your bot can make
