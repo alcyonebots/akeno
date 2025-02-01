@@ -7,7 +7,7 @@ from Emilia import MONGO_DB_URL
 
 _MGCLIENT: AgnosticClient = AsyncIOMotorClient(MONGO_DB_URL)
 
-_DATABASE: AgnosticDatabase = _MGCLIENT["Emilia"]
+_DATABASE: AgnosticDatabase = _MGCLIENT["Akeno"]
 
 
 def get_collection(name: str) -> AgnosticCollection:
