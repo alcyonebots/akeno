@@ -2,11 +2,11 @@ __mod_name__ = "Clone"
 
 __help__ = """
 Nowadays, many people use foreign bots to manage their groups. But this can be risky as the bot owner can misuse your data.
-To solve this issue, we have introduced the clone feature. Without the need for any coding knowledge, database, hosting, or anything else, this feature allows you to clone @Elf_Robot to your own bots and manage your group without any privacy concerns.
+To solve this issue, we have introduced the clone feature. Without the need for any coding knowledge, database, hosting, or anything else, this feature allows you to clone @AkenoHajimeBot to your own bots and manage your group without any privacy concerns.
 
 **Clone Commands:**
 
-• /clone `<bottoken>`: Clones @Elf_Robot to your provided bot.
+• /clone `<bottoken>`: Clones @AkenoHajimeBot to your provided bot.
 • /deleteclone `<bottoken>`: Deletes the cloned bot from our server.
 • /setstartpic `<picurl>`: Sets the start pic for your cloned bot.
 • /broadcast `-flag <reply>`: Broadcasts the replied message to all the groups where the cloned bot is present.
