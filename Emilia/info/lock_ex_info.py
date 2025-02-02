@@ -18,8 +18,8 @@ Locks are a powerful tool, with lots of different options. So here are a few exa
 • Reset all custom lock actions and reasons; remember to unlock again after:
 -> `/lock all ###`
 
-• To allow forwards from a specific channel, eg @SpiralTechDivision, you can allowlist it. You can also use the ID, or invitelink:
--> `/allowlist @SpiralTechDivision`
+• To allow forwards from a specific channel, eg @AlcyoneBots, you can allowlist it. You can also use the ID, or invitelink:
+-> `/allowlist @AlcyoneBots`
 
 • List all locks at once:
 -> `/locks list`
