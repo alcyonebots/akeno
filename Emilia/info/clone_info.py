@@ -22,6 +22,5 @@ Example:
 
 **Note:** The bot will get restarted every 12 hours and it uses the same database as the main bot. Please do not use this feature for illegal purposes. We will not be responsible for any misuse.
 
-PS: If you need any help, feel free to ask in our support group [here.](https://t.me/SpiralTechDivision) I have created this feature with my heart, and it took a lot of time and effort. So, please don't hesitate to /donate to keep this feature alive.
-In future, we might close this feature and make it premium. So, use it now and enjoy :3
+PS: If you need any help, feel free to ask in our support group [here.](https://t.me/AlcyoneBots)
 """
