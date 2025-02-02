@@ -87,7 +87,7 @@ class Config(object):
     DEV_USERS = [6663845789, 6698364560]
     TOKEN = "{}"
 
-    EVENT_LOGS = -100
+    EVENT_LOGS = -1002183841044
     OWNER_ID = 6663845789
     CLONE_LIMIT = 1
 
