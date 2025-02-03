@@ -343,7 +343,7 @@ async def connect_(client: Client, message: Message, mdata: dict):
                     text=(
                         "Channel already connected"
                         + "\nIf someone else has access to it who doesn't own "
-                        + "the channel, contact @SpiralTechDivision"
+                        + "the channel, contact @Alcyone_Support"
                     ),
                 )
                 return
