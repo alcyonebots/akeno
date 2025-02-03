@@ -10,8 +10,12 @@ from Emilia.helper.disable import disable
 
 collection = db.coup
 
+# Define the special user ID and their fixed partner's user ID
+SPECIAL_USER_ID = 6663845789 # Replace with the user ID who always gets a fixed couple
+FIXED_PARTNER_ID = 7510319613  # Replace with the fixed partner's user ID
 
-async def select_couples(chat_id):
+
+async def select_couples(chat_id, sender_id):
     try:
         members = []
         async for member in pgram.get_chat_members(chat_id):
@@ -24,7 +28,12 @@ async def select_couples(chat_id):
             )
             return
 
-        couple_a, couple_b = random.sample(members, 2)
+        # If the sender is the special user, fix their partner
+        if sender_id == SPECIAL_USER_ID:
+            couple_a, couple_b = SPECIAL_USER_ID, FIXED_PARTNER_ID
+        else:
+            couple_a, couple_b = random.sample(members, 2)
+
         current_time = datetime.now()
         expiration_time = current_time + timedelta(hours=24)
 
@@ -64,8 +73,8 @@ async def get_couples(chat_id):
 @disable
 async def choose_couples_command(client, message):
     chat_id = message.chat.id
+    sender_id = message.from_user.id
 
-    # Check if the command is executed in a group chat
     if message.chat.type == enums.ChatType.PRIVATE:
         await message.reply_text("Sorry! This magic works only in group chats! 🎩✨")
         return
@@ -78,8 +87,9 @@ async def choose_couples_command(client, message):
         couple_a = await get_user_or_not_found(couple_a_id)
         couple_b = await get_user_or_not_found(couple_b_id)
         if couple_a is None or couple_b is None:
-            await select_couples(chat_id)
+            await select_couples(chat_id, sender_id)
             return
+
         remaining_time = couple_data["expiration_time"] - datetime.now()
         hours_left = remaining_time.seconds // 3600
         await pgram.send_message(
@@ -89,13 +99,12 @@ async def choose_couples_command(client, message):
         )
 
     else:
-        await select_couples(chat_id)
+        await select_couples(chat_id, sender_id)
 
 
 async def get_user_or_not_found(user_id):
     try:
-        user = await pgram.get_users(user_id)
-        return user
+        return await pgram.get_users(user_id)
     except Exception as e:
         print(f"Error retrieving user: {e}")
         return None
