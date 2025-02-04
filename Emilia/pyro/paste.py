@@ -16,7 +16,11 @@ http = httpx.AsyncClient()
 
 
 @usage("/paste [reply to text/file]")
+<<<<<<< HEAD
+@example("/paste Cenzo is a good boi")
+=======
 @example("/paste Cenzeo is a good boi")
+>>>>>>> fa24d60df6090209f5356f7cff69759c3af68c97
 @description("This command will paste the given text or replied file to nekobin.com")
 @Client.on_message(custom_filter.command(commands="paste", disable=True))
 @disable

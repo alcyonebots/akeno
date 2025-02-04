@@ -193,7 +193,7 @@ async def _info(_, message):
             pass
 
     if user_id == OWNER_ID:
-        text += "\n\nHe is my cute neko Arshhhhhhhhh <3"
+        text += "\n\nHe is my cute neko Cenzohhhhhhhh <3"
 
     elif user_id in DEV_USERS:
         text += "\n\nOne of my developers, respect ++"

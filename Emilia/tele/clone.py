@@ -23,7 +23,7 @@ chat_db = db.chats
 @register(pattern="stats")
 async def stats_(event):
     if not event.sender_id in DEV_USERS:
-        return await event.reply("Only my Arsh can use this command!")
+        return await event.reply("Only my Cenzo can use this command!")
     users = await db.users.count_documents({})
     chats = await db.chats.count_documents({})
     bots = await clone_db.count_documents({})
@@ -220,7 +220,7 @@ async def clone_bot(event):
         except Exception as e:
             LOGGER.error(f"An error occurred while testing the token: {e}")
             await wait.delete()
-            await event.reply("The bot token you provided is incorrect. Please provide the correct bot token. If the token is correct, please wait a while and try again later (12 hours approximately). If the issue persists, contact @SpiralTechDivision")
+            await event.reply("The bot token you provided is incorrect. Please provide the correct bot token. If the token is correct, please wait a while and try again later (12 hours approximately). If the issue persists, contact @Alcyone_Support")
             return
         await clone_db.insert_one({"_id": user_id, "token": token})
         k = await event.reply(

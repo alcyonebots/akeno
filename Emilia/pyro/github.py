@@ -9,7 +9,7 @@ from Emilia.utils.decorators import *
 
 
 @usage("/github [username]")
-@example("/github ArshCypherZ")
+@example("/github Cenzo")
 @description(
     "This will fetch information of given username from github.com and send it."
 )

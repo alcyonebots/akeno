@@ -14,11 +14,11 @@ An advanced, feature-rich bot for Telegram with anime modules, AI chat capabilit
     <a href="https://python.org">
         <img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python">
     </a>
-    <a href="https://github.com/ArshCypherZ">
+    <a href="https://github.com/Cenzo">
         <img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="built-with-love">
     </a>
     <br>
-    <img src="https://img.shields.io/github/license/ArshCypherZ/Emilia?style=for-the-badge" alt="LICENSE">
+    <img src="https://img.shields.io/github/license/Cenzo/Emilia?style=for-the-badge" alt="LICENSE">
 </p>
 
 ---
@@ -46,7 +46,7 @@ An advanced, feature-rich bot for Telegram with anime modules, AI chat capabilit
 
 ```bash
 # Clone the repository
-git clone https://github.com/ArshCypherZ/Emilia.git
+git clone https://github.com/Cenzo/Emilia.git
 
 # Navigate to the project directory
 cd Emilia
@@ -95,6 +95,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## Credits: [ArshCypherZ](https://github.com/ArshCypherZ) and [Pranav Ajay](https://github.com/itspranavajay)
+## Credits: [Cenzo](https://github.com/Cenzo) and [Pranav Ajay](https://github.com/itspranavajay)
 
 ---

@@ -80,7 +80,7 @@ def control_user(func):
                                 "You have been exempted from using this bot "
                                 + "now due to spamming 5 times consecutively!!!"
                                 + "\nTo remove restriction plead to "
-                                + "@SpiralTechDivision"
+                                + "@Alcyone_Support"
                             )
                         )
                         await clog("Emilia", f"UserID: {user}", "BAN")
