@@ -2,8 +2,6 @@
 
 import os
 import random
-
-import carbon
 from telethon import types
 
 from Emilia import LOGGER, SUPPORT_CHAT, telethn
